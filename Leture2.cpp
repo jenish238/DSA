@@ -15,20 +15,38 @@ int main()
     int col;
     cout << "enter the colum :-" << endl;
     cin >> col;
-    for (size_t i = 0; i <= row; i++)
-    {
-        for (int j = 0; j <= col; j++)
-        {
-            if (i == 0 || i == row || j == 0 || j == col)
-            {
-                cout << "* ";
-            }
-            else
-            {
-                cout << "  ";
-            }
-        }
+    // for (size_t i = 0; i <= row; i++)
+    // {
+    //     for (int j = 0; j <= col; j++)
+    //     {
+    //         if (i == 0 || i == row || j == 0 || j == col)
+    //         {
+    //             cout << "* ";
+    //         }
+    //         else
+    //         {
+    //             cout << "  ";
+    //         }
+    //     }
 
+    //     cout << endl;
+    // }
+
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+
+    for (int i = row; i >= 0; i--)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "* ";
+        }
         cout << endl;
     }
 }
