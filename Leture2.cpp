@@ -15,31 +15,31 @@ int main()
     int col;
     cout << "enter the colum :-" << endl;
     cin >> col;
-    // for (size_t i = 0; i <= row; i++)
-    // {
-    //     for (int j = 0; j <= col; j++)
-    //     {
-    //         if (i == 0 || i == row || j == 0 || j == col)
-    //         {
-    //             cout << "* ";
-    //         }
-    //         else
-    //         {
-    //             cout << "  ";
-    //         }
-    //     }
+    for (size_t i = 0; i <= row; i++)
+    {
+        for (int j = 0; j <= col; j++)
+        {
+            if (i == 0 || i == row || j == 0 || j == col)
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+        }
 
-    //     cout << endl;
-    // }
+        cout << endl;
+    }
 
-    // for (int i = 0; i < row; i++)
-    // {
-    //     for (int j = 0; j <= i; j++)
-    //     {
-    //         cout << "* ";
-    //     }
-    //     cout << endl;
-    // }
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
 
     for (int i = row; i >= 0; i--)
     {
@@ -47,6 +47,31 @@ int main()
         {
             cout << "* ";
         }
+        cout << endl;
+    }
+    cout << "New patten" << endl;
+
+    for (int i = 0; i < row; i++)
+    {
+
+        for (int j = 0; j < row - i; j++)
+        {
+            cout << row - i;
+        }
+
+        cout << endl;
+    }
+
+    cout << "new Patten code for Full Pyamid" << endl;
+    for (int i = 1; i <= row; i++)
+    {
+
+        for (int j = 1; j <= (row * 2) - 1; j++)
+        {
+
+            cout << "* ";
+        }
+
         cout << endl;
     }
 }
