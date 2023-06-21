@@ -69,7 +69,15 @@ int main()
         for (int j = 1; j <= (row * 2) - 1; j++)
         {
 
-            cout << "* ";
+            for (int space = 0; space < ((row - i + 1)); space++)
+            {
+                cout << "  ";
+            }
+            for (int k = 0; k < ((row + i)); k++)
+            {
+
+                cout << "* ";
+            }
         }
 
         cout << endl;
